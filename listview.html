@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Listview adaptada als dispositius mòbils</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <style>
+      div{
+        text-align: center;
+      }
+      a:link{
+        text-decoration: none;
+      }
+      a:visited{
+        text-decoration: none;
+      }
+      .listview {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .listview-item {
+        padding: 1em;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .listview-item h2 {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        font-size: 1.5em;
+      }
+
+      @media (max-width: 768px) {
+        .listview-item {
+          padding: 0.5em;
+        }
+
+        .listview-item h2 {
+          font-size: 1.2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="listview" class="justify-content-center">
+      <h3>Listview adaptada als dispositius mòbils</h3>
+      <input type="text" id="search" placeholder="Buscar...">
+    </div>
+    
+    <div id="listview-container" class="justify-content-center"></div>
+    
+    <script>
+      fetch('https://analisi.transparenciacatalunya.cat/resource/kvmv-ahh4.json')
+        .then(response => response.json())
+        .then(data => {
+          const listview = document.getElementById('listview-container');
+          const ul = document.createElement('ul');
+          ul.classList.add('listview');
+    
+          data.forEach((item, index) => {
+            const li = document.createElement('li');
+            li.classList.add('listview-item');
+            li.id = 'item-${index}';
+    
+            const link = document.createElement('a');
+            link.href = 'details.html?id=${index}';
+    
+            const title = document.createElement('h2');
+            title.innerText = item.denominaci_completa;
+            link.appendChild(title);
+    
+            const content = document.createElement('div');
+            content.innerText = item.adre_a;
+            link.appendChild(content);
+    
+            li.appendChild(link);
+            ul.appendChild(li);
+          });
+    
+          listview.appendChild(ul);
+        });
+    
+      // Obtener elementos de la lista
+      const listItems = document.querySelectorAll('.listview-item');
+    
+      // Agregar evento de búsqueda
+      document.getElementById('search').addEventListener('input', function(event) {
+        const query = event.target.value.toLowerCase();
+    
+        // Filtrar elementos de la lista
+        listItems.forEach(function(item) {
+          const title = item.querySelector('h2').innerText.toLowerCase();
+          const content = item.querySelector('div').innerText.toLowerCase();
+          const shouldShow = title.includes(query) || content.includes(query);
+          item.style.display = shouldShow ? 'block' : 'none';
+        });
+      });
+    </script>
+    
+<!--     <div id="listview" class="justify-content-center"><h3>Listview adaptada als dispositius mòbils</h3><input type="text" id="search" placeholder="Buscar...">
+    </div>
+    
+
+    <div id="listview" class="justify-content-center"></div>
+    <script>
+      fetch('https://analisi.transparenciacatalunya.cat/resource/kvmv-ahh4.json')
+        .then(response => response.json())
+        .then(data => {
+          const listview = document.getElementById('listview');
+          const ul = document.createElement('ul');
+          ul.classList.add('listview');
+
+          data.forEach((item, index) => {
+            const li = document.createElement('li');
+            li.classList.add('listview-item');
+            li.id = 'item-${index}';
+
+            const link = document.createElement('a');
+            link.href = 'details.html?id=${index}';
+
+            const title = document.createElement('h2');
+            title.innerText = item.denominaci_completa;
+            link.appendChild(title);
+
+            const content = document.createElement('div');
+            content.innerText = item.adre_a;
+            link.appendChild(content);
+
+            li.appendChild(link);
+            ul.appendChild(li);
+          });
+
+          listview.appendChild(ul);
+        });
+    </script>
+    <script>
+      // Obtener elementos de la lista
+      const listItems = document.querySelectorAll('.listview-item');
+    
+      // Agregar evento de búsqueda
+      document.getElementById('search').addEventListener('input', function(event) {
+        const query = event.target.value.toLowerCase();
+    
+        // Filtrar elementos de la lista
+        listItems.forEach(function(item) {
+          const title = item.querySelector('h2').innerText.toLowerCase();
+          const content = item.querySelector('div').innerText.toLowerCase();
+          const shouldShow = title.includes(query) || content.includes(query);
+          item.style.display = shouldShow ? 'block' : 'none';
+        });
+      });
+    </script> -->
+    
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

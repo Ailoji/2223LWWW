@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="fitxa_recepta.xsl"?>
+ 
+<receptes>
+<recepta>
+<nom>Canapès amb vedella, figues i Tête de Moine AOP</nom>
+<categoria>Primer</categoria>
+<informacio_general>
+<foto>https://www.cuina.cat/uploads/s1/11/60/16/8/recette-horizontale-tete-de-moine_43_542x337.jpeg</foto>
+<comensals>4</comensals>
+<temps unitat="minuts">10</temps>
+<dificultat>Rápida y sencilla</dificultat>
+</informacio_general>
+<ingredients>
+<ingredient quantitat="4">Flors de Tête de Moine AOP</ingredient>
+<ingredient quantitat="4" unitat="rodanxes">Carn de vedella fría</ingredient>
+<ingredient quantitat="4" unitat="llesques">Baguette</ingredient>
+<ingredient quantitat="2" unitat="cucharadas">Miel</ingredient>
+<ingredient quantitat="4">Higos</ingredient>
+<ingredient quantitat="1">Naranja</ingredient>
+<ingredient quantitat="4" unitat="cucharadas">Aceite de oliva virgen extra</ingredient>
+<ingredient>Farigola</ingredient>
+<ingredient>Sal</ingredient>
+<ingredient>Pimienta negra</ingredient>
+</ingredients>
+<preparacio>
+<pas numero="1">Mezclar la miel, el aceite y la farigola. Marinar los higos y las naranjas con la salsa durante 5 minutos, removiendo en círculos. Sazonar la salsa con sal y pimienta.</pas>
+<pas numero="2">Colocar encima de las llesques la carne de vedella fría, previamente enrollada y cortada en tiras, y cubrirla con una lámina de naranja.</pas>
+<pas numero="3">Rociar los canapés con el resto de la salsa y decorar con una flor de Tête de Moine AOP. Añadir los higos al plato y servir.</pas>
+</preparacio>
+</recepta>
+</receptes>

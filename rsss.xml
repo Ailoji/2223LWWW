@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>3.1- Portfoli -III P&#xC3;&#xA0;gina</title>
+    <link>mapaVisi.php</link>
+    <description> Incorporarem el PHP de la banda del servidor ( BACKEND),
+    incorporarem variables i funcions PHP,
+    modularem les pagines amb blocs : header, cos, dreta i footer,
+    la visualitzaci&#xC3;&#xB3; de continguts es far&#xC3;&#xA0; en un format sense lateral eliminat la capa dreta,
+    gravarem els accesos en un fitxer log. Incorporarem una capa informant sobre la connexi&#xC3;&#xB3; del client,
+    generarem un mapa de les visites.</description>
+    <language>es</language>
+    <item>
+      <title>3.2.- L'est&#xC3;&#xA0;ndard RSS i la seva estructura. Llegim un RSS P&#xC3;&#xA0;gina </title>
+      <link>llegir_RSS.php</link>
+      <description>  <p>El XML permet establir patrons en l'estructura dels fitxers de dades, aix&#xC3;&#xB2; facilita poder intercanviar els fitxers o fer-ne lectures de tipus Web Semantica. Un dels patrons m&#xC3;&#xA9;s emprat &#xC3;&#xA9;s el RSS que s'utilitza de manera especial per sindicar continguts informatius d'un portal dins d'altres portals web. Per tractar el tema a l'aula, podem partir d'una estructura simplificada tal com tenim en l'esquema seg&#xC3;&#xBC;ent, i despr&#xC3;&#xA8;s si &#xC3;&#xA9;s el cas aprofundir. Insistir en la import&#xC3;&#xA0;ncia d'explicar als alumnes que el proc&#xC3;&#xA9;s "professional" a seguir, ha de passar per llegir-nos la documentaci&#xC3;&#xB3; "oficial" del format i despr&#xC3;&#xA9;s posar-nos a crear les nostres aplicacions, per&#xC3;&#xB2; aquesta tasca ocupa molt de temps, i per tant s'escapa de les possibilitats de tractament a l'aula, de manera que cercarem "dreceres" per treballar la sindicaci&#xC3;&#xB3; RSS .</p>
+</description>
+      <pubDate>Mié, 30 Mar 2023 15:30:00 GMT</pubDate>
+    </item>
+ 
+  </channel>
+</rss>

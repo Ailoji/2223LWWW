@@ -1,0 +1,109 @@
+<!doctype html>
+<HTML LANG="Catalan">
+<HEAD>
+<TITLE>Llenguatge de marques(XML i JSON) i serveis web (2023) ALJ</TITLE>
+<meta http-equiv="Content-Type" content="text/html; ISO-8859-1">
+<meta charset="utf-8">
+
+<META NAME="DC.Language" SCHEME="RFC1766" CONTENT="Catalan">
+<META NAME="AUTHOR" CONTENT="Aitor López">
+<META NAME="REPLY-TO" CONTENT="alope179@xtec.cat">
+<LINK REV="made" href="mailto:alope179@xtec.cat">
+<META NAME="DESCRIPTION" CONTENT="Porfoli personal">
+<META NAME="KEYWORDS" CONTENT="XML,HTML,XHTML,JSON">
+<META NAME="Resource-type" CONTENT="Document">
+<META NAME="robots" content="ALL">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>h2{        text-align: center;    }</style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <style>
+        body {
+            background-image: url(https://www.muycomputer.com/wp-content/uploads/2021/02/Streaming-m%C3%BAsica-ingresos-industria-e1614428881228.jpg);
+            background-size: 100%;
+        }
+        .card{
+            background-color:whitesmoke;
+        }
+
+    </style>
+</HEAD>
+
+
+<body>
+    <div class="container mt-5" id="contenidor">
+
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Formulari MusicXML2023</h4>
+                <form action="gravar_musica.php" method="POST" enctype="multipart/form-data">
+
+                    <div class="form-group" id="fila0">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId"
+                            placeholder="">
+                    </div>
+                    <div class="form-group" id="fila1">
+                        <label for="titol">Títol</label>
+                        <input type="text" class="form-control" name="titol" id="titol" placeholder="">
+                    </div>
+                    <div class="form-group" id="fila2">
+                        <label for="album">Album</label>
+                        <input type="text" class="form-control" name="album" id="album" placeholder="">
+                    </div>
+                    <div class="form-group" id="fila3">
+                        <label for="cantant">Cantant</label>
+                        <input type="text" class="form-control" name="cantant" id="cantant" placeholder="">
+                    </div>
+                    <div class="form-group" id="fila4">
+                        <label for="categoria">Categoria</label>
+                        <select class="form-control" name="categoria" id="categoria">
+                            <option value="jazz">Jazz</option>
+                            <option value="folk">Folk</option>
+                            <option value="pop">Pop</option>
+                            <option value="rock">Rock</option>
+                            <option value="rap">Rap</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="fila5">
+                        <label for="audio">Fitxer àudio</label>
+                        <input type="file" class="form-control-file" name="audio" id="audio" placeholder=""
+                            aria-describedby="fileHelpId">
+                    </div>
+
+                    <div class="form-group" id="fila6">
+                        <label for="portada">Fitxer portada</label>
+                        <input type="file" class="form-control-file" name="portada" id="portada" placeholder=""
+                            aria-describedby="fileHelpId">
+                    </div>
+                    <div class="form-group" id="fila7">
+                        <input type="submit" class="btn btn-primary" value="Enviar">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        
+</body>
+
+</html>

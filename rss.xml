@@ -1,0 +1,75 @@
+<?xml-stylesheet type="text/xsl" href="rss.xslt"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="row">
+<div id="3.1" class="col link">
+  <h2> 3.1- Portfoli -III P&#xC3;&#xA0;gina </h2>
+  <p>
+    Incorporarem el PHP de la banda del servidor ( BACKEND),
+    incorporarem variables i funcions PHP,
+    modularem les pagines amb blocs : header, cos, dreta i footer,
+    la visualitzaci&#xC3;&#xB3; de continguts es far&#xC3;&#xA0; en un format sense lateral eliminat la capa dreta,
+    gravarem els accesos en un fitxer log. Incorporarem una capa informant sobre la connexi&#xC3;&#xB3; del client,
+    generarem un mapa de les visites.
+  </p>
+  <ul><a href="mapaVisi.php">
+      <li>Mapa de visites</li>
+    </a>
+    <a href="grafics.php">
+      <li>Gr&#xC3;&#xA0;fiques dels nostres visitans</li>
+    </a>
+  </ul></div>
+</div>
+
+<div class="row">
+<div id="3.2" class="col link">
+  <h2> 3.2.- L'est&#xC3;&#xA0;ndard RSS i la seva estructura. Llegim un RSS P&#xC3;&#xA0;gina </h2>
+  <p>El XML permet establir patrons en l'estructura dels fitxers de dades, aix&#xC3;&#xB2; facilita poder intercanviar els fitxers o fer-ne lectures de tipus Web Semantica. Un dels patrons m&#xC3;&#xA9;s emprat &#xC3;&#xA9;s el RSS que s'utilitza de manera especial per sindicar continguts informatius d'un portal dins d'altres portals web. Per tractar el tema a l'aula, podem partir d'una estructura simplificada tal com tenim en l'esquema seg&#xC3;&#xBC;ent, i despr&#xC3;&#xA8;s si &#xC3;&#xA9;s el cas aprofundir. Insistir en la import&#xC3;&#xA0;ncia d'explicar als alumnes que el proc&#xC3;&#xA9;s "professional" a seguir, ha de passar per llegir-nos la documentaci&#xC3;&#xB3; "oficial" del format i despr&#xC3;&#xA9;s posar-nos a crear les nostres aplicacions, per&#xC3;&#xB2; aquesta tasca ocupa molt de temps, i per tant s'escapa de les possibilitats de tractament a l'aula, de manera que cercarem "dreceres" per treballar la sindicaci&#xC3;&#xB3; RSS .</p>
+  <ul><a href="llegir_RSS.php">
+      <li>3.2.-Llegir RSS amb php </li>
+    </a>
+    <a href="llegir_RSSS.php">
+      <li>3.2.-Llegir RSS amb JS </li>
+    </a>
+    <a href="llegir_RSSSS.php">
+      <li>3.2.-Llegir RSS amb RAC1 </li>
+    </a>
+
+    <li>3.2.1.- Crea el RSS del teu portfoli P&#xC3;&#xA0;gina </li>
+
+  </ul></div>
+</div>
+
+<div class="row">
+<div id="3.3" class="col link">
+  <h2> 3.3..- El format KML P&#xC3;&#xA0;gina </h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae nesciunt ratione quibusdam velit provident voluptatibus voluptates unde perspiciatis rerum explicabo hic beatae, porro maiores, corporis quisquam quasi quos commodi?.</p>
+
+
+</div>
+</div>
+
+<div class="row">
+<div id="3.4" class="col link">
+  <h2>3.4.- Formats definits: Primeres passes amb el SVG P&#xC3;&#xA0;gina </h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae nesciunt ratione quibusdam velit provident voluptatibus voluptates unde perspiciatis rerum explicabo hic beatae, porro maiores, corporis quisquam quasi quos commodi?.</p>
+
+  <ul><li>3.4.1 El est&#xC3;&#xA0;ndard SVG : Gestionem Mapes. P&#xC3;&#xA0;gina</li>
+
+  </ul></div>
+</div>
+<div class="row">
+<div id="3.5" class="col link">
+  <h2>3.5.--El Format Listview P&#xC3;&#xA0;gina </h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae nesciunt ratione quibusdam velit provident voluptatibus voluptates unde perspiciatis rerum explicabo hic beatae, porro maiores, corporis quisquam quasi quos commodi?.</p>
+
+
+</div>
+</div>
+<div class="row">
+<div id="3.6" class="col link">
+  <h2>3.6 Creaci&#xC3;&#xB3; d'una app client del Webservice (opcional) amb AppInventor ( Opcional) </h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae nesciunt ratione quibusdam velit provident voluptatibus voluptates unde perspiciatis rerum explicabo hic beatae, porro maiores, corporis quisquam quasi quos commodi?.</p>
+
+
+</div>
+</div></body></html>
