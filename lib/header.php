@@ -61,13 +61,15 @@
                             <a class="dropdown-item" href="./projecte1.php">Mòdul 1</a>
                             <a class="dropdown-item" href="./projecte2.php">Mòdul 2</a>
                             <a class="dropdown-item" href="./projecte3.php">Mòdul 3</a>
-                            <a class="dropdown-item" href="./projecte0.html">Mòdul 4</a>
-                            <a class="dropdown-item" href="./projecte0.html">Mòdul 5</a>
-                            <a class="dropdown-item" href="./projecte0.html">Mòdul 6</a>
+                            <a class="dropdown-item" href="./projecte4.php">Mòdul 4</a>
+                            <a class="dropdown-item" href="./projecte5.php">Mòdul 5</a>
                         </div>
                     </li>
                 </ul>
+                <a class="nav-link" href="sobreAutor.php">Sobre mi</a>
+
             </div>
+
             <form class="form-inline my-2 my-lg-0" action="javascript:busca();" method="get">
                 <input id="cerca" name="cerca" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>

@@ -38,15 +38,19 @@
         </div>
         <div id="4" class="col link">
             <h2> Mòdul 4</h2>
-            <p> Lorem ipsum dolor </p>
-            <img src="img/projecte1.jpg" alt="" class="fotomodul">
+            <p> Creació de servidors i clients webservices </p>
+            <a href="projecte4.php">
+            <img src="img/projecte1.jpg" alt="" class="fotomodul"></a>
 
         </div>
         <div id="5" class="col link">
             <h2> Mòdul 5</h2>
-            <p> Lorem ipsum dolor </p>
-            <img src="img/projecte4.jpg" alt="" class="fotomodul">
+            <p> Creació de servidors i clients webservices</p>
+            <a href="projecte5.php">
+
+            <img src="img/projecte4.jpg" alt="" class="fotomodul"></a>
 
         </div>
     </div>
+    
     <?php include("lib/footer.php"); ?>
