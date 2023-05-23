@@ -76,13 +76,11 @@
             </form>
         </nav>
         <div class="row">
-            <div id="meteo" class="col-md-3 col-xs-12 contenedor-imagenes"></div>
-            <div class="col-md-6 col-xs-12 contenedor-imagenes">
-                <img class="banner" src="img/banner_portfoli.jpg" height="230" width="965" alt="" />
+<!--             <div id="meteo" class="col-md-3 col-xs-12 contenedor-imagenes"></div>
+ -->            <div class="col-md-12 col-xs-12 contenedor-imagenes">
+                <img class="banner" src="img/banner_portfoli.jpg" height="180" width="965" alt="" />
             </div>
-            <div id="musica" class="col-md-3 col-xs-12 contenedor-imagenes"></div>
-        </div>
-        <div class="row">
-            <div id="meteo" class="col-md-6  contenedor-imagenes"></div>
-        </div>
+<!--             <div id="musica" class="col-md-3 col-xs-12 contenedor-imagenes"></div>
+ -->        </div>
+
         <div id="contenido-modal" style="display: none;"></div>

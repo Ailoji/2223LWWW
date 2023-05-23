@@ -41,6 +41,9 @@
     <div id="5.5" class="col link">
       <h2> 5.5 Creació d'una activitat pròpia</h2>
       <p>Es tracta de que cada participant crei una proposta d'aplicació a la seva aula, dels con tinguts tractats en el curs. </p>
+      <p><a href="creacioActivitat.php">
+      Creació de una activitat propià
+      </a></p>
     </div>
   </div>
 </div>

@@ -40,7 +40,7 @@
             <h2> Mòdul 4</h2>
             <p> Creació de servidors i clients webservices </p>
             <a href="projecte4.php">
-            <img src="img/projecte1.jpg" alt="" class="fotomodul"></a>
+                <img src="img/projecte1.jpg" alt="" class="fotomodul"></a>
 
         </div>
         <div id="5" class="col link">
@@ -48,9 +48,25 @@
             <p> Creació de servidors i clients webservices</p>
             <a href="projecte5.php">
 
-            <img src="img/projecte4.jpg" alt="" class="fotomodul"></a>
+                <img src="img/projecte4.jpg" alt="" class="fotomodul"></a>
 
         </div>
     </div>
-    
+    <div class="row">
+        <div class="col link ml-5">
+            <div id="meteo" class="ml-5"></div>
+
+
+        </div>
+        <div class="col link  ml-5">
+            <div> <?php include("nasa.php"); ?></div>
+        </div>
+        <!--         <div class="col link  ml-5">
+        </div> -->
+        <div class="col link  ml-5">
+            <div id="musica"></div>
+        </div>
+
+    </div>
+    <div><?php include("santoral.php"); ?></div>
     <?php include("lib/footer.php"); ?>

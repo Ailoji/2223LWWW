@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:template match="/">
+        <!--<xsl:variable name="ruta" select="http:......"/> -->
+        <xsl:variable name="ruta">http: ......./</xsl:variable>
+        <html>
+
+        <head>
+            <meta charset="UTF-8" />
+            <title>Portfoli</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                header {
+                    background-color: #333;
+                    color: #fff;
+                    padding: 20px;
+                    text-align: center;
+                }
+
+                nav {
+                    background-color: #f2f2f2;
+                    border: 1px solid #ccc;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+                }
+
+                nav ul {
+                    display: flex;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                nav ul li {
+                    margin-left: 10px;
+                }
+
+                section {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    padding: 20px;
+                }
+
+                section .item {
+                    background-color: #f2f2f2;
+                    border: 1px solid #ccc;
+                    box-sizing: border-box;
+                    flex-basis: 48%;
+                    margin-bottom: 20px;
+                    padding: 10px;
+                    text-align: center;
+                }
+
+                section .item h3 {
+                    margin-top: 0;
+                }
+
+                footer {
+                    background-color: #333;
+                    color: #fff;
+                    padding: 20px;
+                    text-align: center;
+                }
+
+                .header {
+                    background-image: linear-gradient(to right, #1234, #00ffff);
+                    padding: 20px;
+                    text-align: center;
+                }
+
+                .header h1 {
+                    font-size: 4rem;
+                    color: white;
+                }
+
+                .header .emoji {
+                    font-size: 5rem !Important;
+                    vertical-align: middle;
+                }
+
+                .captura {
+                    width: 250px;
+                }
+
+                .veure {
+
+                    background-color: #0000ff;
+                    color: #ffffff;
+                    width: 120px;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    height: 30px;
+                    text-decoration: none !important;
+                    font-weight: bold;
+                }
+
+                a {
+                    text-decoration: none !important;
+                    color: #ffffff;
+                }
+            </style>
+        </head>
+
+        <body>
+            <header class="header">
+                <h1><span class="emoji">💼 </span> El meu Portfoli </h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#">Inici</a></li>
+                    <li><a href="#">Sobre mí</a></li>
+                    <li><a href="#">Portafoli</a></li>
+                    <li><a href="#">Contacte</a></li>
+                </ul>
+                <form action="#" method="GET">
+                    <input type="search" placeholder="Cercar..." />
+                    <button type="submit">Cercar</button>
+                </form>
+            </nav>
+            <section>
+                <xsl:for-each select="//activitats/activitat">
+                    <div class="item">
+                        <h3><xsl:value-of select="concat(@id, ' - ', titol)" /></h3>
+                        <img src="{concat($ruta, imatge)}" class="captura" />
+                        <p><xsl:value-of select="resum" /></p>
+                        <button class="veure"><a style="text-decoration:none; "
+                                href="{concat($ruta,'/activitats/',@id,'.html')}" target="blank">Veure activitat
+                            </a></button>
+                    </div>
+                </xsl:for-each>
+            </section>
+            <footer>
+                <p>(c) ; 2023 El meu portfoli (Plantilla ChatGPT) </p>
+            </footer>
+        </body>
+
+        </html>
+    </xsl:template>
+</xsl:stylesheet>
