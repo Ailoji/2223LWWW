@@ -4,6 +4,7 @@
 <div class="row justify-content-center">
     <?php gravar_log(); ?>
 </div>
+<hr>
 <div id="files">
     <div class="row">
 
@@ -52,21 +53,29 @@
 
         </div>
     </div>
+    <hr class="mb-5">
     <div class="row">
-        <div class="col link ml-5">
-            <div id="meteo" class="ml-5"></div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div id="musica" class="d-flex justify-content-center align-items-center mr-3" style="height: 250px; width: 250px;">
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="d-flex justify-content-center align-items-center ml-3" style="height: 250px; width: 250px; ">
+                <?php include("nasa.php"); ?>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div id="meteo" class="d-flex justify-content-center align-items-center" style="height: 250px; width: 250px;">
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="d-flex justify-content-center align-items-center" style="height: 250px; width: 250px;">
+                <?php include("santoral.php"); ?>
+            </div>
+        </div>
 
-
-        </div>
-        <div class="col link  ml-5">
-            <div> <?php include("nasa.php"); ?></div>
-        </div>
-        <!--         <div class="col link  ml-5">
-        </div> -->
-        <div class="col link  ml-5">
-            <div id="musica"></div>
-        </div>
 
     </div>
-    <div><?php include("santoral.php"); ?></div>
+
+
     <?php include("lib/footer.php"); ?>
